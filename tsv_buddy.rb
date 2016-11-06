@@ -7,6 +7,7 @@ module TsvBuddy
   		@hashName = Array.new
 		@data = Array.new
   		tsvSplits = tsv.split("\n")
+  		puts tsvSplits
   		initHashName(tsvSplits[0])
   		tsvSplits.shift
   		transferToHashArray(tsvSplits)
